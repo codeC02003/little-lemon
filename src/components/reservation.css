@@ -1,0 +1,43 @@
+.reservation-section {
+  text-align: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.reservation-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 115px;
+}
+
+.reservation-form input,
+.reservation-form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 90%; 
+  max-width: 400px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn{
+ background-color: #f4ce14;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+
+@media screen and (min-width: 820px) and (max-width: 1180px){
+ .reservation-form, .form-title{
+  margin-top: 120px;
+ }
+}

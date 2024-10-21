@@ -1,0 +1,39 @@
+.login-form-section {
+ margin-top: 150px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 195px ;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Ensures the inputs do not stretch too wide on larger screens */
+  padding: 10px;
+  margin: 0 auto; /* Centering the input */
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #f4ce14;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+

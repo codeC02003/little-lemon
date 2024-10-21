@@ -1,0 +1,212 @@
+/* OrderOnline.css */
+.menu-wrapper {
+  overflow: hidden;
+  width: 960px; 
+  margin: auto;
+}
+
+.menu {
+ margin-top: 100px;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-item {
+  flex: 0 0 auto;
+  margin: 0 10px;
+  width: 300px; 
+}
+.order-online-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.order-online-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    position: static; 
+    margin-bottom: 50px;
+}
+
+.order-online-container .card p {
+  white-space: normal; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 25px;
+}
+
+.order-online-container .card .add-to-cart {
+ border: none;
+ background-color: #f4ce14;
+  color: black;
+  padding: 10px 28px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-top: 5px;
+
+}
+
+.order-online-container .card {
+  height: 420px;
+}
+
+.menu-wrapper {
+  overflow: hidden;
+  width: 960px;
+  margin: auto;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  white-space: nowrap;
+  padding: 20px 0;
+}
+
+.menu::-webkit-scrollbar {
+  display: none; 
+}
+
+.menu-item {
+  flex: none; 
+  width: 300px; 
+  margin: 0 10px; 
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active-dot {
+  background-color: #717171;
+}
+
+.icon-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.quantity-controls span {
+  margin: 0 10px;
+}
+
+/* Media Queries */
+
+/* Mobile Devices: Show 1 card in view */
+@media screen and (min-width: 345px) and (max-width: 430px) {
+  .menu-wrapper {
+    width: 100%; /* Full width of the parent container */
+    margin: 0 auto; /* Center it */
+  }
+  .menu {
+    justify-content: start; /* Align items to the start of the container */
+    margin-top: 60px; /* Add some top margin if needed */
+  }
+  .menu-item {
+    width: 100%; /* Make the card take up the full width of the menu */
+    margin-right: 10px; /* Keep the original right margin if needed */
+  }
+  .dot-container {
+    padding: 1px; /* Keep the dots close */
+  }
+  .quantity-controls {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 345px) and (max-width: 429px) {
+  .menu-wrapper {
+    width: 90vw; 
+  }
+  .menu-item {
+    width: 45%; 
+  }
+  .menu{
+    margin-top: 60px;
+    margin-left: -20px;
+  
+  }
+   .dot-container {
+    padding: 1px;
+}
+}
+
+
+
+/* Mobile Devices: 430px to 600px, show 1 card */
+@media screen and (min-width: 430px) and (max-width: 600px) {
+  .menu-wrapper {
+    width: 90vw; 
+  }
+  .menu-item {
+    width: 45%; 
+  }
+  .menu{
+    margin-top: 60px;
+    margin-left: -12px;
+  
+  }
+   .dot-container {
+    padding: 1px;
+}
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px){
+  .menu-wrapper{
+    margin-top: 100px;
+  }
+}
+
+/* Small Desktops: 801px to 1024px, show 3 cards */
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .menu-item {
+    width: 50%;
+  }
+  
+}
+
